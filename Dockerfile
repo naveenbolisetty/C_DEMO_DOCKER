@@ -9,7 +9,7 @@ FROM ubuntu:latest
 RUN mkdir -p /home/Helloworld
 
 #Copy HELLO App inside the image 
-RUN cp . /home/Helloworld
+COPY . /home/Helloworld
 
 #run the application
 CMD /home/Helloworld/HELLO_WORLD.exe
